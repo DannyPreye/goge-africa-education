@@ -66,11 +66,11 @@ const AboutSection = () => {
               design.
             </p>
             <Button
-              className="mt-10 w-[160px] h-[56px] font-[700] text-pink"
+              className="my-10 w-[160px] h-[56px] font-[700] text-pink"
               content={"Discover"}
             />
           </div>
-          <div className="absolute container mx-auto left-[-10%] h-[100px] bg-pink -bottom-5"></div>
+          <div className="absolute container mx-auto left-[-10%] h-[100px] bg-pink -bottom-10"></div>
         </div>
       </div>
     </section>

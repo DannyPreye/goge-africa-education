@@ -31,4 +31,44 @@ export const courses = [
         type: "Premium",
         topic: "Embark On The Journey Of Becoming An Artist"
     },
-] 
+]
+
+export const testimonial = [
+    {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    },
+    {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    }, {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    }, {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    }, {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    }, {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    }, {
+        content: "Semaj Africa is an online education platform that delivers video courses, programs and resources for Individual, Advertising & Media Specialist, Online Marketing Professionals, Freelancers and anyone.",
+        name: "Arthur Broklyn",
+        category: "3d Modelling"
+
+    },
+]
