@@ -2,9 +2,16 @@ import Button from "../general/Button";
 import Image from "next/image";
 import NavLink from "./NavLink";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 const Nav = () => {
+  const { ref, inView } = useInView();
+  console.log(inView);
   return (
-    <header className="grid place-items-center py-[29px] bg-white sticky top-0 z-10 shadow-md">
+    <header
+      ref={ref}
+      className={`grid place-items-center py-[29px] bg-white ${"sticky shadow-sm bg-yellow"}top-0 z-10 `}
+    >
       <div className="container">
         <div className="flex  justify-between items-center">
           <Link href={"/"}>

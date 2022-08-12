@@ -7,6 +7,7 @@ import SuccessStory from '../components/success/SuccessStory'
 import CourseSection from '../components/Home/CourseSection'
 import Achievement from '../components/Home/Achievement'
 import TestimonialSection from "../components/Home/TestimonialSection"
+import Pricing from '../components/Home/Pricing'
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <CourseSection />
       <Achievement />
       <TestimonialSection />
+      <Pricing />
 
     </motion.main>
   )

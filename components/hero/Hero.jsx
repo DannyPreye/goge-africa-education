@@ -3,7 +3,12 @@ import { motion } from "framer-motion";
 import { BiCaretRight } from "react-icons/bi";
 const Hero = () => {
   return (
-    <div className="bg-gradient-to-r from-dark to-yellow  w-screen grid place-items-center overflow-x-hidden">
+    <motion.div
+      initial={{ backgroundSize: "300%", backgroundPosition: "left" }}
+      animate={{ backgroundPosition: "right" }}
+      transition={{ duration: 4 }}
+      className="bg-gradient-to-r from-dark to-yellow  w-screen grid place-items-center overflow-x-hidden"
+    >
       <div className="container mx-auto">
         <div className="w-[90%] flex justify-between ">
           <div className=" max-w-[534px]">
@@ -59,7 +64,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default Hero;

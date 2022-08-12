@@ -51,7 +51,7 @@ const TestimonialSection = () => {
             ))}
           </Splide>
         </div>
-        <div className="w-full grid place-items-center">
+        <div className="w-full grid place-items-center mt-[97px]">
           {" "}
           <Image
             src="/icons/Loader.svg"
