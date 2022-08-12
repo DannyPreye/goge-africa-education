@@ -25,23 +25,23 @@ const PricingCard = ({
       <div className="w-[80%] text-[24px] font-[600] z-10">
         <h5 className="text-[24px] font-[600] mt-[44px]">{type}</h5>
         <div className="mt-[27px]">
-          <div className="flex  ">
-            <span className="relat">$</span>
-            <div className="flex items-baseline flex-wrap justify-end">
+          <div className="flex">
+            <span className="">$</span>
+            <div className="flex items-baseline flex-wrap justify-end w-[221px]">
               <p className="font-[800] text-[101px] bg-clip-text text-transparent bg-gradient-to-r from-dark to-yellow">
                 {amount}
-              </p>
-              <p className="text-[17px] ">
-                /
-                {time?.substring(0, 1).toUpperCase() +
-                  time?.slice(1).toLowerCase()}
+                <span className="text-[17px] text-black font-[600]">
+                  /
+                  {time?.substring(0, 1).toUpperCase() +
+                    time?.slice(1).toLowerCase()}
+                </span>
               </p>
             </div>
           </div>
 
           <p className="text-[10px] w-[194px] mt-[20px]">{content}</p>
         </div>
-        <div className="grid gap-y-[14px] mt-[22px]">
+        <div className="grid gap-y-[14px] mt-[22px] ]">
           {bulletContent?.map((bullet, index) => (
             <List key={index} bulletContent={bullet} />
           ))}
