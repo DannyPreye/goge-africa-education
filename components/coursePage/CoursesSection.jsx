@@ -1,6 +1,7 @@
 import { BiSearch } from "react-icons/bi";
 import CourseCard from "../Home/CourseCard";
 import { motion } from "framer-motion";
+import { courses } from "../../test/test";
 const SearchComponent = () => (
   <motion.div
     whileInView={{ y: 0 }}
@@ -35,7 +36,11 @@ export default () => (
     <div className="w-[90%] flex gap-[67px]">
       <div>
         {/* Course Card */}
-        <div className="grid grid-cols-3"></div>
+        <div className="grid grid-cols-3">
+          {courses.map((course, index) => (
+            <CourseCard topic={course.topic} type={course.type} />
+          ))}
+        </div>
       </div>
     </div>
   </section>
