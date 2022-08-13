@@ -1,6 +1,7 @@
 import SmoothRec from "../../svg/Rectangle 5.7";
 import Button from "../general/Button";
 import PricingCard from "./PricingCard";
+
 const Pricing = () => {
   return (
     <div className="bg-pink w-screen  relative grid place-items-start ">

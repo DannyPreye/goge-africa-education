@@ -22,7 +22,7 @@ export default (first) => {
   return (
     <footer className="w-screen bg-dark-gray overflow-hidden">
       <div className="container mx-auto">
-        <div className="flex gap-[84px] mb-[29px] justify-center">
+        <div className="flex gap-[84px] mb-[29px] justify-center mt-10">
           <FooterLinks Logo>
             <p className="w-[265px]">
               Semaj Africa is an online education platform that delivers video

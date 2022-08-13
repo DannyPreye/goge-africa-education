@@ -1,14 +1,15 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Parallax from "react-rellax";
 const SuccessStory = () => {
   return (
     <section className="w-screen bg-gradient-to-r from-dark to-yellow grid place-items-center h-[777.5px] overflow-hidden">
       <div className="container mx-auto">
         <div className=" flex gap-[36px]">
           <div className="relative pt-[130px]">
-            <div className=" absolute left-[-0] top-0">
+            <Parallax speed={-4} className=" absolute left-[-0] top-[-80%]">
               <Image src={"/assets/icons.svg"} width={567} height={777.5} />
-            </div>
+            </Parallax>
             <div className="z-[1000] text-pink ">
               <h4 className="text-[40px] font-[800] ">
                 Success Stories <br /> From Our Students <br /> WorldWide!

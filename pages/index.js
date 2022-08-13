@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import Hero from '../components/hero/Hero'
+import HeroSection from '../components/Home/HeroSection'
 import { motion } from "framer-motion"
 import AboutSection from '../components/Home/AboutSection'
 import SuccessStory from '../components/success/SuccessStory'
@@ -23,7 +23,7 @@ export default function Home() {
       </Head>
 
 
-      <Hero />
+      <HeroSection />
       <AboutSection />
       <SuccessStory />
       <CourseSection />

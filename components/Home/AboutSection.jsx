@@ -1,6 +1,7 @@
 import AboutSectionIcons from "./AboutSectionIcons";
 import Image from "next/image";
 import Button from "../general/Button";
+import Parallax from "react-rellax";
 
 const AboutSection = () => {
   return (
