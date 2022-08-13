@@ -2,6 +2,7 @@ import '../styles/globals.css'
 import { AnimatePresence } from "framer-motion"
 import Nav from '../components/nav/Nav'
 import Head from 'next/head'
+import Footer from '../components/footer/Footer';
 
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || EmptyLayout;
@@ -12,6 +13,7 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <Nav />
     <Component {...pageProps} />
+    <Footer />
   </AnimatePresence>
 }
 
