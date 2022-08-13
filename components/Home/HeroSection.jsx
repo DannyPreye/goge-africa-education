@@ -4,13 +4,32 @@ import { motion } from "framer-motion";
 import { BiCaretRight } from "react-icons/bi";
 import Image from "next/image";
 
+const itemA = {
+  hidden: { scale: 0, y: 100 },
+  show: { scale: 1, y: 0 },
+};
 export default () => (
   <Hero>
     <Parallax speed={1}>
-      <div className=" max-w-[534px]">
-        <h1 className="text-[44px] text-pink font-[900] mt-[100px]">
+      <motion.div
+        initial={{
+          x: -100,
+        }}
+        whileInView={{
+          x: 0,
+        }}
+        transition={{
+          type: "tween",
+          ease: "easeInOut",
+          duration: 2,
+          staggerChildren: 0.1,
+          delayChildren: 0.3,
+        }}
+        className=" max-w-[534px]"
+      >
+        <motion.h1 className="text-[44px] text-pink font-[900] mt-[100px]">
           Get Access to Unlimited Educational Resources. Everywhere, Everytime!
-        </h1>
+        </motion.h1>
         <p className="text-[18px] max-w-[444px] text-pink mt-[26px]">
           Premium access to more than 10,000 resources ranging from courses,
           events e.t.c.
@@ -42,7 +61,7 @@ export default () => (
             <BiCaretRight className="text-pink " width={7.67} height={10.73} />
           </motion.button>
         </div>
-      </div>
+      </motion.div>
     </Parallax>
   </Hero>
 );
