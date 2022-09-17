@@ -7,13 +7,15 @@ import Footer from '../components/footer/Footer';
 function MyApp({ Component, pageProps }) {
   const Layout = Component.Layout || EmptyLayout;
   return <AnimatePresence>
-    <Head>
-      <title>Goge Africa</title>
-      <link rel="icon" href="/icons/logo.svg" />
-    </Head>
-    <Nav />
-    <Component {...pageProps} />
-    <Footer />
+    <div>
+      <Head>
+        <title>Goge Africa</title>
+        <link rel="icon" href="/icons/logo.svg" />
+      </Head>
+      <Nav />
+      <Component {...pageProps} />
+      <Footer />
+    </div>
   </AnimatePresence>
 }
 
