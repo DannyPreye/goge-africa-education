@@ -12,7 +12,7 @@ const SmoothRec = ({ className }) => {
             </g>
             <defs>
                 <filter id="filter0_d_3_144" x="-124.226" y="0.82959" width="188.564" height="434.218" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
-                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                    <feFlood floodOpacity="0" result="BackgroundImageFix" />
                     <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
                     <feOffset dy="4" />
                     <feGaussianBlur stdDeviation="2" />

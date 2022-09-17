@@ -4,9 +4,9 @@ import Nav from '../components/nav/Nav'
 import Head from 'next/head'
 import Footer from '../components/footer/Footer';
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps, router }) {
   const Layout = Component.Layout || EmptyLayout;
-  return <AnimatePresence>
+  return <AnimatePresence exitBeforeEnter key={router.router} >
     <div>
       <Head>
         <title>Goge Africa</title>
