@@ -7,7 +7,7 @@ import Footer from '../components/footer/Footer';
 function MyApp({ Component, pageProps, router }) {
   const Layout = Component.Layout || EmptyLayout;
   return <AnimatePresence exitBeforeEnter key={router.router} >
-    <div>
+    <div className='overflow-x-hidden'>
       <Head>
         <title>Goge Africa</title>
         <link rel="icon" href="/icons/logo.svg" />

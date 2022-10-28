@@ -1,10 +1,11 @@
+import { motion } from 'framer-motion';
 const CourseLink = ({ content }) => {
   return (
-    <li>
-      <a className="text-[14px] text-gray focus:font-[700] cursor-pointer">
+    <motion.li whileHover={{ scale: 1.2 }} whileFocus={{ scale: 1.2 }}>
+      <a className='text-[14px] text-gray focus:font-[700] cursor-pointer'>
         {content}
       </a>
-    </li>
+    </motion.li>
   );
 };
 export default CourseLink;

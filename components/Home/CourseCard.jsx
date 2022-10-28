@@ -1,6 +1,10 @@
+import { motion } from 'framer-motion';
 const CourseCard = ({ type, topic }) => {
   return (
-    <div className='max-w-[303px] h-[279px] relative bg-[#C4C4C4] rounded-[10px] overflow-hidden'>
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      className='w-[303px]  h-[279px] relative bg-[#C4C4C4] rounded-[10px] overflow-hidden cursor-pointer'
+    >
       <div className=' text-[14px] font-[700] text-pink w-[88px] h-[33px] grid place-items-center bg-gradient-to-r from-dark to-yellow rounded-bl-[20px] absolute top-0 right-0'>
         {type}
       </div>
@@ -9,7 +13,7 @@ const CourseCard = ({ type, topic }) => {
           <p className='text-[14px] w-[144px] font-[700] text-pink'>{topic}</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 export default CourseCard;

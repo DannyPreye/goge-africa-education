@@ -34,9 +34,9 @@ export default () => (
       <SearchComponent />
     </div>
     <div className=' grid place-items-center container mx-auto'>
-      <div className='flex w-[90%]  gap-[67px] '>
+      <div className='flex w-[90%]  gap-[67px] justify-center lg:justify-start'>
         <div>
-          <div className='mb-[47px] flex gap-[291px] items-center'>
+          <div className='mb-[47px] flex-wrap flex gap-[291px]  items-center'>
             <div className='w-[328px] flex justify-between '>
               <p>Showing 1–8 of 10 results</p>
               <div className='flex w-[120px] justify-between'>
@@ -46,7 +46,7 @@ export default () => (
                 <p>16</p>
               </div>
             </div>
-            <div className='flex items-center gap-[34px]'>
+            <div className='flex  items-center gap-[34px]'>
               <div className='flex w-[56.79px] h-[20.92px] justify-between'>
                 <BsListTask className='w-[20.92px] h-[20.92px] text-gray' />
                 <AiOutlineAppstore className='w-[20.92px] h-[20.92px]' />
@@ -65,7 +65,7 @@ export default () => (
           </div>
 
           {/* Course Card */}
-          <div className='grid grid-cols-3 w-[928px] gap-x-[9px] gap-y-[15px] mb-[106px]'>
+          <div className='grid md:grid-cols-2  lg:grid-cols-3 w-[928px] gap-x-[9px] gap-y-[15px] mb-[106px]'>
             {courses.map((course, i) => {
               return (
                 <CourseCard

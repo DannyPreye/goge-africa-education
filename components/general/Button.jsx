@@ -1,9 +1,10 @@
-import { motion } from "framer-motion";
-import { useRouter } from "next/router";
+import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 const Button = ({ className, onClick, content }) => {
   return (
     <motion.button
       whileTap={{ scale: 0.8 }}
+      whileHover={{ scale: 1.1 }}
       className={`  bg-gradient-to-r from-dark to-yellow rounded-full ${className} `}
       onClick={onClick}
     >
